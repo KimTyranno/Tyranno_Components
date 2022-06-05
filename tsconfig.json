@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        // react-jsx를 쓰면 import React 안써도됨 (typescript 4.1이상, react,react-dom 17이상부터)
+        "jsx": "react-jsx",
+        "strict": true,
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "lib": ["es2015", "es2016", "es2017", "es2018", "es2019", "es2020", "DOM"],
+        "target": "es5",
+        "outDir": "./build",
+        "esModuleInterop": true,
+        "noImplicitAny": false,
+        "strictNullChecks": false,
+        "removeComments": true,
+        // 이게 있어야 css속성으로 써도 에러푯시가 안남
+        "jsxImportSource": "@emotion/react"
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}
