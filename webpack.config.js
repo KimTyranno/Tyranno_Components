@@ -14,7 +14,7 @@ module.exports = {
     entry: path.resolve(__dirname, 'src/index.tsx'),
     // output: {
     //     filename: 'bundle.js',
-    //     path: path.join(__dirname, 'build'),
+    //     path: path.join(__dirname, 'dist'),
     // },
     module: {
         rules: [
@@ -29,7 +29,7 @@ module.exports = {
         port: 3000,
         historyApiFallback: true,
         open: true,
-        // static: path.resolve(__dirname, 'build'),
+        // static: path.resolve(__dirname, 'dist'),
 
         // CORS 설정
         // proxy: {
