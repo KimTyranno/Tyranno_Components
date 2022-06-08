@@ -9,8 +9,7 @@
         "build": "webpack",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
-        "deploy-storybook": "gh-pages -d storybook-static",
-        "chromatic": "npx chromatic --project-token=3e8438dd11c5"
+        "deploy-storybook": "gh-pages -d storybook-static"
     },
     "author": "",
     "license": "ISC",
@@ -23,7 +22,6 @@
         "@storybook/manager-webpack5": "^6.5.6",
         "@storybook/react": "^6.5.6",
         "@storybook/testing-library": "^0.0.11",
-        "chromatic": "^6.5.6",
         "clean-webpack-plugin": "^4.0.0",
         "gh-pages": "^4.0.0",
         "html-webpack-plugin": "^5.5.0",
@@ -35,6 +33,9 @@
     },
     "dependencies": {
         "@emotion/react": "^11.9.0",
+        "@fortawesome/fontawesome-svg-core": "^6.1.1",
+        "@fortawesome/free-brands-svg-icons": "^6.1.1",
+        "@fortawesome/react-fontawesome": "^0.1.18",
         "@types/react": "^18.0.11",
         "@types/react-dom": "^18.0.5",
         "react": "^18.1.0",
