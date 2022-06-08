@@ -15,6 +15,6 @@
         // 이게 있어야 css속성으로 써도 에러푯시가 안남
         "jsxImportSource": "@emotion/react"
     },
-    "include": ["src/**/*"],
+    "include": ["src/**/*", "./custom.d.ts"],
     "exclude": ["node_modules"]
 }
