@@ -6,6 +6,6 @@ export default {
     component: IsometricMenu,
 } as ComponentMeta<typeof IsometricMenu>;
 
-const Template: ComponentStory<typeof IsometricMenu> = (args) => <IsometricMenu {...args} />;
+const Template: ComponentStory<typeof IsometricMenu> = () => <IsometricMenu />;
 
-export const Primary = Template.bind({});
+export const Menu = Template.bind({});
