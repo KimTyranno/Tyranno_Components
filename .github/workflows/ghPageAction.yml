@@ -5,6 +5,9 @@ on: # workflow 파일을 자동으로 트리거하는 이벤트를 명시함
         branches:
             - master
 
+permissions:
+    contents: write
+
 jobs:
     build-deploy:
         runs-on: ubuntu-latest # 이 job을 어떤 os에서 실행할지 설정
