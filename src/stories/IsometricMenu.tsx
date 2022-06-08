@@ -111,6 +111,7 @@ const li = (color: string, index: number) =>
             fontSize: '1.25em',
         },
     });
+
 export const IsometricMenu = () => {
     return (
         <div css={container}>
