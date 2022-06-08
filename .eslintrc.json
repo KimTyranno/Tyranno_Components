@@ -1,42 +1,42 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+    "env": {
+        "browser": true,
+        "es2021": true
     },
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
-  "plugins": ["react", "@typescript-eslint"],
-  "rules": {
-    // 세미콜론 설정
-    "semi": "error",
-    // 홑따옴표 설정
-    "quotes": ["error", "single"],
-    // 들여쓰기 설정
-    "indent": ["error", 4],
-    // 같은 from에서 import하는데 각각 다른줄에서 import하고 있을때 설절
-    "no-duplicate-imports": "error",
-    // 콤마
-    "comma-dangle": ["error", "only-multiline"],
-    // 이스케이프 문자로 변경해야하는 설정
-    "react/no-unescaped-entities": 0,
-    // 타입자체가 정의 안돼있는데 사용하려고할때 나오는 설정 (0=비활성, 1=경고표시, 2=에러)
-    "react/prop-types": 1,
-    /*
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": ["react", "@typescript-eslint"],
+    "rules": {
+        // 세미콜론 설정
+        "semi": "error",
+        // 홑따옴표 설정
+        "quotes": ["error", "single"],
+        // 들여쓰기 설정
+        "indent": ["error", 4],
+        // 같은 from에서 import하는데 각각 다른줄에서 import하고 있을때 설절
+        "no-duplicate-imports": "error",
+        // 콤마
+        "comma-dangle": ["error", "only-multiline"],
+        // 이스케이프 문자로 변경해야하는 설정
+        "react/no-unescaped-entities": 0,
+        // 타입자체가 정의 안돼있는데 사용하려고할때 나오는 설정 (0=비활성, 1=경고표시, 2=에러)
+        "react/prop-types": 1,
+        /*
       아래설정은 React17이상 부터 React를 import하지 않아도 되서 지우게되면
       eslint에서 선언해야 된다고 뜨는거 무시하는거임 (React공식문서에서 off하라고 함)
     */
-    "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
-  }
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off"
+    }
 }

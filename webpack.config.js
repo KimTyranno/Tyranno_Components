@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
-    mode: 'production',
+    mode: devMode ? 'development' : 'production',
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
         alias: {

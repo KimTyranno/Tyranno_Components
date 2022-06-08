@@ -1,29 +1,29 @@
-name: github pages
+name: github pages # github repository에서 Action탭에 노출되는 workflow의 이름 (옵션)
 
-on:
-    push:
+on: # workflow 파일을 자동으로 트리거하는 이벤트를 명시함
+    push: # 누군가 git repository에 변경사항을 push할때마다 job이 실행된다. paths, !paths, branches등 특정 패턴에 일치하는 파일이 변경되면 실행하게 할 수 있다.
         branches:
             - master
 
 jobs:
     build-deploy:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-latest # 이 job을 어떤 os에서 실행할지 설정
         strategy:
             matrix:
                 node-version: [16.x]
 
-        steps:
-            - name: checkout
-              uses: actions/checkout@v2
+        steps: # job의 동작을 나열함, 각각의 step은 독립적인 프로세스임
+            - name: checkout # step의 이름
+              uses: actions/checkout@v2 # step에서 사용할 액션, Github 마켓플레이스에 올라온 action도 사용가능 {owner}/{repo}@{ref|version} 형태
             - name: Use Node.js ${{ matrix.node-version }}
               uses: actions/setup-node@v1
               with:
                   node-version: ${{ matrix.node-version }}
             - name: install deps
-              run: npm install
+              run: npm install # npm install을 함
             - name: run build
-              run: npm run build
-            - name: run build storybook
+              run: npm run build # 패키지를 빌드
+            - name: run build storybook # storybook을 빌드
               run: npm run build-storybook -o ./dist/storybook
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3
