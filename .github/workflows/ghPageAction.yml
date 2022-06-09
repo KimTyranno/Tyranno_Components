@@ -22,9 +22,9 @@ jobs:
             - name: install deps # npm install을 함
               run: npm install
             - name: run build storybook # storybook을 빌드
-              run: npm run build-storybook -o ./dist
+              run: npm run build-storybook
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3
               with:
                   personal_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: ./dist
+                  publish_dir: ./storybook-static
