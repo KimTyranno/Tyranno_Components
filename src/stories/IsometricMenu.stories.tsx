@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { IsometricMenu } from './IsometricMenu';
 
 export default {
-    title: 'ETC/IsometricMenu',
+    title: 'components/ETC/IsometricMenu',
     component: IsometricMenu,
 } as ComponentMeta<typeof IsometricMenu>;
 
