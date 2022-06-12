@@ -8,4 +8,4 @@ export default {
 
 const Template: ComponentStory<typeof DarkModeToggleButton> = () => <DarkModeToggleButton />;
 
-export const Menu = Template.bind({});
+export const Button = Template.bind({});
