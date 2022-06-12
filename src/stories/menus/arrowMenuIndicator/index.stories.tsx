@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { ArrowMenuIndicator } from './arrowMenuIndicator';
+import { ArrowMenuIndicator } from '.';
 
 export default {
     title: 'components/Menus/ArrowMenuIndicator',

@@ -1,8 +1,8 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { DarkModeToggleButton } from './darkModeToggleButton';
+import { DarkModeToggleButton } from '.';
 
 export default {
-    title: 'components/ETC/DarkModeToggleButton',
+    title: 'components/buttons/DarkModeToggleButton',
     component: DarkModeToggleButton,
 } as ComponentMeta<typeof DarkModeToggleButton>;
 
