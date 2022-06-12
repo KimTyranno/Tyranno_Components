@@ -66,7 +66,7 @@ const markerStyle = (marker: markerType) =>
         },
     });
 
-export const ArrowMenuIndicator = () => {
+export const ArrowMenu = () => {
     const [marker, setMarker] = useState<markerType>({ top: 10, width: 80 });
     const onMouseMoveHandle = (e) => {
         setMarker({ top: e.target.offsetTop, width: e.target.offsetWidth });
