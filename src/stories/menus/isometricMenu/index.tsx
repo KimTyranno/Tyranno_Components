@@ -91,7 +91,7 @@ const li = (color: string, index: number) =>
             transition: '.5s',
         },
 
-        ':last-child:after': {
+        ':last-of-type:after': {
             boxShadow: '-120px 120px 20px rgba(0,0,0,0.25)',
         },
 
