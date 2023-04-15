@@ -99,37 +99,36 @@ const animate = keyframes`
     }
 `;
 
-const circle = () =>
-    css({
+const circle = css({
+    position: 'absolute',
+    inset: 0,
+    borderRadius: '50%',
+    display: 'flex',
+    justifyContent: 'center',
+    zIndex: 10,
+    i: {
         position: 'absolute',
-        inset: 0,
-        borderRadius: '50%',
-        display: 'flex',
-        justifyContent: 'center',
-        zIndex: 10,
-        i: {
-            position: 'absolute',
-            width: '3px',
-            height: '50%',
-            background: '#fff',
-            transformOrigin: 'bottom',
-        },
-    });
+        width: '3px',
+        height: '50%',
+        background: '#fff',
+        transformOrigin: 'bottom',
+    },
+});
 const hrStyle = (hh: number, mm: number) =>
-    css({
+    css(circle, {
         i: {
             transform: `scaleY(0.3) rotateZ(${hh + mm / 12}deg)`,
             width: '4px',
         },
     });
 const mnStyle = (mm: number) =>
-    css({
+    css(circle, {
         i: {
             transform: `scaleY(0.45) rotateZ(${mm}deg)`,
         },
     });
 const scStyle = (ss: number) =>
-    css({
+    css(circle, {
         i: {
             width: '2px',
             transform: `scaleY(0.55) rotateZ(${ss}deg)`,
@@ -166,13 +165,13 @@ export const AnalogClock = () => {
                     <span css={number(3)}>
                         <b>9</b>
                     </span>
-                    <div css={[circle, hrStyle(hh, mm)]}>
+                    <div css={hrStyle(hh, mm)}>
                         <i></i>
                     </div>
-                    <div css={[circle, mnStyle(mm)]}>
+                    <div css={mnStyle(mm)}>
                         <i></i>
                     </div>
-                    <div css={[circle, scStyle(ss)]}>
+                    <div css={scStyle(ss)}>
                         <i></i>
                     </div>
                 </div>
