@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { InputField } from '.';
 
 export default {
-    title: 'components/Fields/InputField',
+    title: 'components/Fields/input/normal',
     component: InputField,
 } as ComponentMeta<typeof InputField>;
 
