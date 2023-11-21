@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { InputPasswordField } from '.';
 
 export default {
-    title: 'components/Fields/input/password',
+    title: 'components/Fields/input/Password',
     component: InputPasswordField,
 } as ComponentMeta<typeof InputPasswordField>;
 

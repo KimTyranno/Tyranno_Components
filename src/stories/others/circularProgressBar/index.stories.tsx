@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { CircularProgressBar } from '.';
 
 export default {
-    title: 'components/Others/circularProgressBar',
+    title: 'components/Others/CircularProgressBar',
     component: CircularProgressBar,
 } as ComponentMeta<typeof CircularProgressBar>;
 
