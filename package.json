@@ -7,7 +7,7 @@
     "scripts": {
         "start": "webpack serve --port 3000 --progress",
         "build": "webpack",
-        "storybook": "start-storybook -p 6006",
+        "storybook": "start-storybook -p 6006 -s ./src/public",
         "build-storybook": "build-storybook",
         "deploy-storybook": "gh-pages -d storybook-static"
     },
